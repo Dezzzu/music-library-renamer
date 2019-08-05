@@ -5,7 +5,7 @@ import pathlib
 
 about = {
     'name': 'Music Library Renamer',
-    'version': '1',
+    'version': '1.1',
     'author': 'Daniil Naumov (Dezzzu)',
     'desc': 'Renames all files in given directory and its sub-directories and changes directory structure. Output'
             'format: folders are named CD01, CD02, ...; files are named 001, 002, ... + old name.',
@@ -79,7 +79,7 @@ if __name__ == '__main__':
                         current_track = 1
                         current_cd += 1
 
-        if not args.copy:
+        if not args.copy and not args.noclear:
             for directory, _, _ in os.walk(args.input_directory):
                 if is_empty(directory):
                     print('Removing ' + directory)
