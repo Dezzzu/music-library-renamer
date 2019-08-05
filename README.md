@@ -8,11 +8,11 @@ python main.py [-h] [--about] [--copy] [--noclear] [--input INPUT_DIRECTORY]
                [--output OUTPUT_DIRECTORY]
 
 ## Arguments
-| Argument                  | Description                                      |
-| ------------------------- | ------------------------------------------------ |
-| -h, --help                | Shows this help message and exit                 |  
-| --about                   | Prints info about this script                    |
-| --copy                    | Copies files instead of renaming them if present |
-| --noclear                 | Prevents removing input directory tree           |
-| --input INPUT_DIRECTORY   | Input directory in OS-specific format            |
-| --output OUTPUT_DIRECTORY | Output directory in OS-specific format           |
+| Argument                  | Description                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| -h, --help                | Shows this help message and exit                                               |  
+| --about                   | Prints info about this script                                                  |
+| --copy                    | Copies files instead of renaming them if present                               |
+| --noclear                 | Prevents removing input directory tree                                         |
+| --input INPUT_DIRECTORY   | Input directory in OS-specific format (defaults to current working directory)  |
+| --output OUTPUT_DIRECTORY | Output directory in OS-specific format (defaults to current working directory) |
